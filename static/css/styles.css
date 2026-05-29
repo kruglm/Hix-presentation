@@ -6,18 +6,18 @@
 }
 
 :root {
-  --primary: #0B4F73;
-  --primary-light: #0F6D93;
-  --primary-dark: #042B42;
-  --primary-tint: #E5F3F5;
+  --primary: #0B6473;
+  --primary-light: #0E8190;
+  --primary-dark: #063842;
+  --primary-tint: #E2F3F1;
   --accent: #C8A96E;
   --accent-dark: #A08550;
   --accent-tint: #F2EAD8;
   --heading: #0D1B26;
   --body: #3A4D5C;
   --muted: #8FA4B4;
-  --background: #F3EBDD;
-  --surface: #FCFAF5;
+  --background: #F4E4C3;
+  --surface: #FFF8EC;
   --line: rgba(13, 27, 38, 0.12);
   --shadow: 0 28px 80px rgba(0, 30, 52, 0.13);
   --radius-lg: 34px;
@@ -38,12 +38,12 @@ body {
   font-family: "Vela Sans", "Inter", "Manrope", "Segoe UI", Arial, sans-serif;
   color: var(--heading);
   background:
-    radial-gradient(circle at 8% 8%, rgba(200, 169, 110, 0.20), transparent 28rem),
-    radial-gradient(circle at 88% 18%, rgba(15, 109, 147, 0.13), transparent 30rem),
-    radial-gradient(circle at 50% 110%, rgba(200, 169, 110, 0.12), transparent 34rem),
-    linear-gradient(120deg, rgba(255, 251, 244, 0.88), rgba(242, 234, 216, 0.48) 46%, rgba(229, 243, 245, 0.40)),
-    repeating-linear-gradient(0deg, rgba(13, 27, 38, 0.016) 0, rgba(13, 27, 38, 0.016) 1px, transparent 1px, transparent 14px),
-    repeating-linear-gradient(90deg, rgba(13, 27, 38, 0.01) 0, rgba(13, 27, 38, 0.01) 1px, transparent 1px, transparent 18px),
+    radial-gradient(circle at 8% 8%, rgba(200, 169, 110, 0.26), transparent 28rem),
+    radial-gradient(circle at 88% 18%, rgba(14, 129, 144, 0.14), transparent 30rem),
+    radial-gradient(circle at 50% 110%, rgba(214, 179, 98, 0.18), transparent 34rem),
+    linear-gradient(120deg, rgba(255, 247, 231, 0.92), rgba(244, 228, 195, 0.66) 48%, rgba(226, 243, 241, 0.32)),
+    repeating-linear-gradient(0deg, rgba(13, 27, 38, 0.014) 0, rgba(13, 27, 38, 0.014) 1px, transparent 1px, transparent 14px),
+    repeating-linear-gradient(90deg, rgba(13, 27, 38, 0.009) 0, rgba(13, 27, 38, 0.009) 1px, transparent 1px, transparent 18px),
     var(--background);
   line-height: 1.55;
   overflow-x: hidden;
@@ -71,7 +71,7 @@ a {
   opacity: 0.055;
   background-image:
     url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.78'/%3E%3C/svg%3E"),
-    linear-gradient(135deg, rgba(200, 169, 110, 0.14), transparent 42%);
+    linear-gradient(135deg, rgba(214, 179, 98, 0.16), transparent 42%);
 }
 
 .cursor-glow {
@@ -184,7 +184,7 @@ a {
   inset: 90px -120px 40px;
   border-radius: 44px;
   background:
-    linear-gradient(135deg, rgba(0, 49, 83, 0.96), rgba(0, 30, 52, 0.98)),
+    linear-gradient(135deg, rgba(11, 100, 115, 0.96), rgba(6, 56, 66, 0.98)),
     var(--primary);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -228,7 +228,7 @@ a {
   height: 380px;
   left: -80px;
   bottom: -80px;
-  background: radial-gradient(circle, rgba(0, 80, 138, 0.30), transparent 68%);
+  background: radial-gradient(circle, rgba(14, 129, 144, 0.28), transparent 68%);
   animation-delay: -2s;
 }
 
@@ -405,7 +405,7 @@ a {
   position: relative;
   border: 1px solid rgba(13, 27, 38, 0.09);
   border-radius: var(--radius-lg);
-  background: rgba(252, 249, 242, 0.82);
+  background: rgba(255, 248, 236, 0.84);
   box-shadow: 0 18px 65px rgba(0, 30, 52, 0.07);
 }
 
@@ -485,33 +485,33 @@ a {
 }
 
 .feature-card:nth-child(1) {
-  background: linear-gradient(180deg, rgba(229, 243, 245, 0.72), rgba(252, 249, 242, 0.92));
+  background: linear-gradient(180deg, rgba(226, 243, 241, 0.74), rgba(255, 248, 236, 0.94));
 }
 
 .feature-card:nth-child(2) {
-  background: linear-gradient(180deg, rgba(255, 251, 244, 0.96), rgba(242, 234, 216, 0.62));
+  background: linear-gradient(180deg, rgba(255, 248, 236, 0.98), rgba(244, 228, 195, 0.72));
 }
 
 .feature-card:nth-child(3) {
-  background: linear-gradient(180deg, rgba(244, 248, 250, 0.96), rgba(232, 241, 248, 0.78));
+  background: linear-gradient(180deg, rgba(255, 250, 241, 0.96), rgba(226, 243, 241, 0.76));
 }
 
 .audience-card:first-child {
   background:
-    radial-gradient(circle at top right, rgba(15, 109, 147, 0.08), transparent 34%),
-    linear-gradient(180deg, rgba(252, 249, 242, 0.96), rgba(243, 235, 221, 0.92));
+    radial-gradient(circle at top right, rgba(14, 129, 144, 0.10), transparent 34%),
+    linear-gradient(180deg, rgba(255, 248, 236, 0.97), rgba(244, 228, 195, 0.88));
 }
 
 .audience-card:last-child {
   background:
     radial-gradient(circle at top right, rgba(200, 169, 110, 0.12), transparent 34%),
-    linear-gradient(180deg, rgba(255, 251, 244, 0.96), rgba(229, 243, 245, 0.62));
+    linear-gradient(180deg, rgba(255, 248, 236, 0.96), rgba(226, 243, 241, 0.66));
 }
 
 .direction-panel:not(.direction-panel-dark) {
   background:
     radial-gradient(circle at 88% 20%, rgba(200, 169, 110, 0.14), transparent 24%),
-    linear-gradient(180deg, rgba(252, 249, 242, 0.98), rgba(242, 234, 216, 0.84));
+    linear-gradient(180deg, rgba(255, 248, 236, 0.98), rgba(244, 228, 195, 0.86));
 }
 
 .relevance-section {
@@ -523,7 +523,7 @@ a {
   overflow: hidden;
   padding: clamp(34px, 7vw, 72px);
   background:
-    linear-gradient(135deg, rgba(255, 251, 244, 0.96), rgba(229, 243, 245, 0.72)),
+    linear-gradient(135deg, rgba(255, 248, 236, 0.97), rgba(226, 243, 241, 0.70)),
     var(--surface);
 }
 
@@ -619,7 +619,7 @@ a {
 .direction-panel-dark {
   color: var(--surface);
   background:
-    linear-gradient(145deg, rgba(0, 49, 83, 0.96), rgba(0, 30, 52, 0.99)),
+    linear-gradient(145deg, rgba(11, 100, 115, 0.96), rgba(6, 56, 66, 0.99)),
     var(--primary);
 }
 
@@ -696,7 +696,7 @@ a {
   border-radius: 30px;
   background:
     radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.28), transparent 28%),
-    linear-gradient(145deg, rgba(0, 49, 83, 0.94), rgba(0, 30, 52, 0.98));
+    linear-gradient(145deg, rgba(11, 100, 115, 0.94), rgba(6, 56, 66, 0.98));
   color: var(--surface);
   overflow: hidden;
   position: relative;
@@ -746,7 +746,7 @@ a {
   text-align: center;
   background:
     radial-gradient(circle at 50% 0%, rgba(200, 169, 110, 0.22), transparent 28rem),
-    linear-gradient(180deg, rgba(255, 250, 242, 0.98), rgba(250, 246, 237, 0.92));
+    linear-gradient(180deg, rgba(255, 248, 236, 0.98), rgba(246, 233, 204, 0.94));
 }
 
 .final-card .eyebrow {
@@ -856,10 +856,125 @@ a {
   }
 }
 
+
+@media (max-width: 720px) {
+  .section-shell {
+    width: min(calc(100% - 28px), var(--max-width));
+  }
+
+  .header {
+    width: calc(100% - 24px);
+    padding: 10px 12px 10px 16px;
+  }
+
+  .hero-bg {
+    inset: 82px 0 24px;
+    border-radius: 30px;
+  }
+
+  .hero-content {
+    padding: 0 18px;
+    gap: 24px;
+  }
+
+  .hero > .eyebrow {
+    padding-left: 18px;
+    margin-bottom: 20px;
+  }
+
+  .hero-copy h1 {
+    max-width: 100%;
+    font-size: clamp(2.65rem, 14.5vw, 4.5rem);
+    letter-spacing: -0.06em;
+  }
+
+  .hero-copy p {
+    max-width: 100%;
+    font-size: 0.98rem;
+  }
+
+  .hero-card {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .feature-grid,
+  .audience-grid,
+  .directions-grid {
+    gap: 14px;
+  }
+
+  .feature-card,
+  .audience-card,
+  .direction-panel,
+  .relevance-card,
+  .final-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-shell {
+    width: min(calc(100% - 22px), var(--max-width));
+  }
+
+  .hero {
+    padding: 118px 0 48px;
+  }
+
+  .hero-bg {
+    inset: 74px 0 18px;
+    border-radius: 24px;
+  }
+
+  .hero-content {
+    padding: 0 14px;
+  }
+
+  .hero > .eyebrow {
+    padding-left: 14px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.35rem, 13.5vw, 3.75rem);
+  }
+
+  .hero-actions {
+    gap: 10px;
+  }
+
+  .btn {
+    min-height: 46px;
+    padding: 0 17px;
+    font-size: 0.86rem;
+  }
+
+  .feature-card,
+  .audience-card,
+  .direction-panel,
+  .hero-card,
+  .final-card,
+  .relevance-card {
+    padding: 21px;
+    border-radius: 22px;
+  }
+
+  .feature-card h3,
+  .audience-card h3,
+  .direction-panel h3 {
+    margin-top: 52px;
+  }
+
+  .audience-card h3,
+  .direction-panel h3 {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 640px) {
   .header {
     top: 10px;
-    width: calc(100% - 20px);
+    width: calc(100% - 24px);
   }
 
   .header-cta {
@@ -872,15 +987,15 @@ a {
   }
 
   .hero > .eyebrow {
-    padding-left: 18px;
+    padding-left: 14px;
   }
 
   .hero-content {
-    padding: 0 18px;
+    padding: 0 14px;
   }
 
   .hero-copy h1 {
-    font-size: clamp(3rem, 17vw, 5.4rem);
+    font-size: clamp(2.45rem, 13.8vw, 4.4rem);
   }
 
   .split-section,
